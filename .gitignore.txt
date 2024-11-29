@@ -1,0 +1,17 @@
+# Ignorar arquivos e pastas do sistema
+*.log
+*.bak
+*.swp
+.DS_Store
+
+# Ignorar pastas de configurações e dados pessoais
+.vscode/
+AppData/
+Downloads/
+Documents/
+OneDrive/
+Favorites/
+Videos/
+Music/
+Desktop/
+Contacts/
