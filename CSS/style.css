@@ -24,7 +24,7 @@
   img:hover {
     transform: scale(1.05);
   }
-  .img-fluid {
+  .img-padrao {
     width: 400px; 
     height: 300px; 
     object-fit: cover; 
