@@ -1,0 +1,171 @@
+/* Estilo Geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #8c0606;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+/* Imagens */
+img {
+  border: 3px solid #ff6666;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.img-padrao {
+  width: 400px; 
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+.img-padrao2 {
+  width: 900px; 
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+.vital {
+  text-align: center;
+}
+
+/* Títulos e Parágrafos */
+h1 {
+  color: #e0cccc; 
+}
+
+h2 {
+  color: #ff3333; /* Vermelho mais vibrante */
+}
+
+p {
+  color: #6c757d;
+}
+
+h3 {
+  font-size: 20px;
+  color: #ff3333;
+  font-weight: bold;
+}
+
+h3:hover {
+  color: #d92626;
+}
+
+/* Página de Linha do Tempo */
+body.timeline-page {
+  background-color: #ffffff; 
+  color: #000000;
+}
+
+body.timeline-page header {
+  background-color: #690610; 
+  color: #ffffff; 
+  padding: 20px 0;
+  text-align: center;
+}
+
+body.timeline-page h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+body.timeline-page h2 {
+  color: #74020d;
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+body.timeline-page ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+body.timeline-page li {
+  background-color: #f8d7da; 
+  margin: 10px 0;
+  padding: 15px;
+  border-left: 5px solid #820814; 
+  border-radius: 5px;
+}
+
+body.timeline-page main {
+  text-align: center;
+  padding: 30px;
+}
+
+/* Header Geral */
+header {
+  background-color: #8c0606; /* Vermelho escuro */
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Main */
+main {
+  padding: 20px;
+  background-color: #fff5f5; /* Fundo suave com tom branco-avermelhado */
+}
+
+main h2 {
+  border-bottom: 2px solid #ff3333; /* Linha de destaque nos subtítulos */
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+main ul {
+  list-style-type: disc;
+  margin: 10px 0 20px 20px;
+  color: #333;
+}
+
+main ul li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #70030e;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.lead {
+  font-size: medium;
+}
+
+.text-center {
+  color:#000000;
+}
+  
