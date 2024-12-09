@@ -175,7 +175,7 @@ footer p {
   width: 100%;
   max-width: 600px; /* Define a largura máxima do carrossel */
   height: 300px; /* Altura fixa para o carrossel */
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden; /* Oculta as imagens fora da área visível */
   border: 2px solid #ddd;
   border-radius: 10px;
@@ -184,13 +184,18 @@ footer p {
 .carousel-slide {
   display: flex; /* Garante que as imagens fiquem lado a lado */
   transition: transform 0.5s ease-in-out; /* Adiciona animação de transição */
+  width: 100%;
 }
 
 .carousel-slide img {
   width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
   height: 100%; /* Ajusta a altura da imagem para o tamanho do contêiner */
   object-fit: cover; /* Garante que a imagem não seja distorcida */
+  box-sizing: border-box;
 }
+
+
+
 
 button {
   position: absolute;
