@@ -53,16 +53,15 @@
     color: #d92626;
   }
 
-  /* Página de linha do tempo - Cor branca e vermelha */
 body.timeline-page {
-    background-color: #ffffff; /* Fundo branco */
-    color: #000000; /* Texto preto */
+    background-color: #ffffff; 
+    color: #000000;
     font-family: Arial, sans-serif;
   }
   
   body.timeline-page header {
-    background-color: #690610; /* Vermelho forte */
-    color: #ffffff; /* Texto branco */
+    background-color: #690610; 
+    color: #ffffff; 
     padding: 20px 0;
     text-align: center;
   }
