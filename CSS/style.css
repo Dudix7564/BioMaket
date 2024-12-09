@@ -172,27 +172,29 @@ footer p {
 
 .carousel-container {
   position: relative;
+  overflow: hidden;
   width: 100%;
-  max-width: 600px; /* Define a largura máxima do carrossel */
-  height: 300px; /* Altura fixa para o carrossel */
+  max-width: 600px; /* Ajuste conforme necessário */
   margin: 0 auto;
-  overflow: hidden; /* Oculta as imagens fora da área visível */
-  border: 2px solid #ddd;
-  border-radius: 10px;
+  border: 2px solid red;
 }
 
 .carousel-slide {
-  display: flex; /* Garante que as imagens fiquem lado a lado */
-  transition: transform 0.5s ease-in-out; /* Adiciona animação de transição */
+  display: flex;
+  transition: transform 0.4s ease-in-out;
   width: 100%;
 }
 
-.carousel-slide img {
-  width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
-  height: 100%; /* Ajusta a altura da imagem para o tamanho do contêiner */
-  object-fit: cover; /* Garante que a imagem não seja distorcida */
+.carousel-item {
+  min-width: 100%;
   box-sizing: border-box;
 }
+.carousel-slide img {
+  display: block;
+  width: 100%;
+  height: auto; /* Garante que a imagem mantenha as proporções */
+}
+
 
 
 
