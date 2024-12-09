@@ -168,36 +168,47 @@ footer p {
 .text-center {
   color:#000000;
 }
-  .carousel-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-  }
-  .carousel-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  .carousel-slide img {
-    min-width: 100%;
-    pointer-events: none;
-  }
-  button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-  }
-  #prevBtn {
-    left: 10px;
-  }
-  #nextBtn {
-    right: 10px;
-  }
+
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Define a largura máxima do carrossel */
+  height: 300px; /* Altura fixa para o carrossel */
+  margin: auto;
+  overflow: hidden; /* Oculta as imagens fora da área visível */
+  border: 2px solid #ddd;
+  border-radius: 10px;
+}
+
+.carousel-slide {
+  display: flex; /* Garante que as imagens fiquem lado a lado */
+  transition: transform 0.5s ease-in-out; /* Adiciona animação de transição */
+}
+
+.carousel-slide img {
+  width: 100%; /* Ajusta a largura da imagem para o tamanho do contêiner */
+  height: 100%; /* Ajusta a altura da imagem para o tamanho do contêiner */
+  object-fit: cover; /* Garante que a imagem não seja distorcida */
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#prevBtn {
+  left: 10px;
+}
+
+#nextBtn {
+  right: 10px;
+}
+
