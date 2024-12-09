@@ -41,6 +41,16 @@ img:hover {
   object-fit: cover; 
   border-radius: 10px; 
 }
+.img-padrao2 {
+  width: 900px; 
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+.vital {
+  text-align: center;
+}
 
 /* Títulos e Parágrafos */
 h1 {
