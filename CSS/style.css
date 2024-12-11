@@ -174,9 +174,6 @@ footer p {
   position: relative;
   overflow: hidden;
   width: 100%;
-  max-width: 600px; /* Ajuste conforme necessário */
-  margin: 0 auto;
-  border: 2px solid red;
 }
 
 .carousel-slide {
@@ -184,22 +181,12 @@ footer p {
   transition: transform 0.4s ease-in-out;
   width: 100%;
 }
-
-.carousel-item {
-  min-width: 100%;
-  box-sizing: border-box;
-}
 .carousel-slide img {
-  display: block;
   width: 100%;
   height: auto; /* Garante que a imagem mantenha as proporções */
 }
 
-
-
-
-
-button {
+.btn{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
