@@ -1,61 +1,57 @@
 // Seleção de elementos
 const carouselSlide = document.querySelector('.carousel-slide');
-const images = document.querySelectorAll('.carousel-slide img');
+const images = document.querySelectorAll('.carousel-item');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 let counter = 0;
-let size = images[0].clientWidth;
+const totalImages = images.length;
 
-// Atualiza o tamanho do slide ao redimensionar a janela
-function updateSize() {
-  size = images[0].clientWidth;
+// Atualiza o tamanho dinamicamente
+function updateSlidePosition() {
+  const size = images[0].clientWidth;
   carouselSlide.style.transform = `translateX(${-size * counter}px)`;
 }
 
-window.addEventListener('resize', updateSize);
+// Atualiza a posição ao redimensionar a janela
+window.addEventListener('resize', updateSlidePosition);
 
-// Navegação para o próximo slide
+// Botão próximo
 nextBtn.addEventListener('click', () => {
-  if (counter < images.length - 1) {
+  if (counter < totalImages - 1) {
     counter++;
   } else {
-    counter = 0; // Volta ao início
+    counter = 0; // Volta para o início
   }
-  carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-  resetInterval(); // Reseta o intervalo automático
+  updateSlidePosition();
+  resetInterval();
 });
 
-// Navegação para o slide anterior
+// Botão anterior
 prevBtn.addEventListener('click', () => {
   if (counter > 0) {
     counter--;
   } else {
-    counter = images.length - 1; // Vai para o último slide
+    counter = totalImages - 1; // Vai para o último slide
   }
-  carouselSlide.style.transform = `translateX(${-size * counter}px)`;
-  resetInterval(); // Reseta o intervalo automático
+  updateSlidePosition();
+  resetInterval();
 });
 
-// Intervalo automático para o carrossel
+// Intervalo automático
 let autoSlide = setInterval(() => {
-  if (counter < images.length - 1) {
-    counter++;
-  } else {
-    counter = 0;
-  }
-  carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+  counter = (counter + 1) % totalImages;
+  updateSlidePosition();
 }, 5000);
 
-// Reseta o intervalo automático ao usar os botões
+// Reseta o intervalo automático
 function resetInterval() {
   clearInterval(autoSlide);
   autoSlide = setInterval(() => {
-    if (counter < images.length - 1) {
-      counter++;
-    } else {
-      counter = 0;
-    }
-    carouselSlide.style.transform = `translateX(${-size * counter}px)`;
+    counter = (counter + 1) % totalImages;
+    updateSlidePosition();
   }, 5000);
 }
+
+// Inicializa o carrossel na posição inicial
+updateSlidePosition();
