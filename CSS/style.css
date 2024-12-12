@@ -203,7 +203,7 @@ footer p {
 }
 
 .videos {
-    width: 100%;
-    height: auto;
-  
+  width: 100%;  /* Ajusta a largura para 100% da largura do contêiner */
+  max-width: 600px;  /* Define a largura máxima para 600px, mas o vídeo pode ser menor em telas menores */
+  height: auto;  /* Mantém a proporção do vídeo */
 }
