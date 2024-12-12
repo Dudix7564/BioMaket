@@ -1,6 +1,6 @@
 // Função para redirecionar para a página principal
 function voltarParaPaginaPrincipal() {
-  window.location.href = "/BioMaket/index.html"; // Altere para o caminho correto da sua página principal
+  window.location.href = "../index.html"; // Altere para o caminho correto da sua página principal
 }
 
 // Event listener para o botão de voltar
