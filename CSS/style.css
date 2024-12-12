@@ -169,66 +169,15 @@ footer p {
   color:#000000;
 }
 
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  overflow: hidden; /* Esconde o conteúdo fora da área visível */
+.carousel {
+  max-width: 600px; /* Define a largura máxima do carrossel */
+  margin: 0 auto; /* Centraliza o carrossel */
 }
 
-.carousel-slide {
-  display: flex;
-  transition: transform 0.5s ease-in-out; /* Animação suave para transições */
-  width: 300%; /* Ajuste para acomodar todas as imagens em uma única linha */
-}
-
-.carousel-item {
-  width: 100%; /* Cada imagem ocupa o tamanho do contêiner */
+.carousel img {
   height: auto;
-}
-
-.btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 100;
-}
-
-#prevBtn {
-  left: 10px;
-}
-
-#nextBtn {
-  right: 10px;
-}
-
-
-/* Outras estilizações */
-body {
-  font-family: Arial, sans-serif;
-}
-
-h2 {
-  margin-top: 40px;
-}
-
-.timeline {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.timeline li {
-  margin-bottom: 15px;
-}
-
-.timeline li strong {
-  font-weight: bold;
+  max-height: 400px; /* Limita a altura máxima das imagens */
+  object-fit: cover; /* Ajusta a imagem para preencher sem distorcer */
 }
 
 
