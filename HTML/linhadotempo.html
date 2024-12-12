@@ -20,13 +20,13 @@
       <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/BioMaket/FOTOS/historico.jpg" class="d-block w-100" alt="Imagem 1">
+            <img src="../FOTOS/historico.jpg" class="d-block w-100 img-fluid" alt="Imagem 1">
           </div>
           <div class="carousel-item">
-            <img src="/BioMaket/FOTOS/pintura.jpeg" class="d-block w-100" alt="Imagem 2">
+            <img src="../FOTOS/pintura.jpeg" class="d-block w-100 img-fluid" alt="Imagem 2">
           </div>
           <div class="carousel-item">
-            <img src="/BioMaket/FOTOS/massinha.jpeg" class="d-block w-100" alt="Imagem 3">
+            <img src="../FOTOS/massinha.jpeg" class="d-block w-100 img-fluid" alt="Imagem 3">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -52,7 +52,7 @@
 
       <div class="video-container mt-4 text-center">
         <video width="600" controls>
-          <source src="/BioMaket/VÍDEOS/video.mp4" type="video/mp4">
+          <source src="../VÍDEOS/video.mp4" type="video/mp4">
           Seu navegador não suporta a tag de vídeo. Atualize para um navegador moderno.
         </video>
         <p class="mt-2">Confira o progresso do projeto em vídeo!</p>
@@ -64,7 +64,7 @@
   <button class="btn btn-danger position-fixed" id="backButton" style="bottom: 20px; right: 20px;">Voltar</button>
 
   <footer class="text-center mt-4">
-    <p>&copy; 2024 - BioMaquete </p>
+    <p>&copy; 2024 - BioMaquete</p>
   </footer>
 
   <!-- Script do Bootstrap -->
@@ -73,7 +73,7 @@
   <script>
     // Botão para voltar à página principal
     document.getElementById('backButton').addEventListener('click', () => {
-      window.location.href = 'index.html'; // Substitua 'index.html' pelo caminho da sua página principal
+      window.location.href = '../index.html'; // Certifique-se de ajustar o caminho da sua página principal
     });
   </script>
 </body>

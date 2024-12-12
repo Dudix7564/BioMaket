@@ -36,16 +36,17 @@ img:hover {
 }
 
 .img-padrao {
-  width: 400px; 
-  height: 300px; 
-  object-fit: cover; 
-  border-radius: 10px; 
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
+
 .img-padrao2 {
-  width: 900px; 
-  height: 300px; 
-  object-fit: cover; 
-  border-radius: 10px; 
+  width: 900px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .vital {
@@ -54,7 +55,7 @@ img:hover {
 
 /* Títulos e Parágrafos */
 h1 {
-  color: #e0cccc; 
+  color: #e0cccc;
 }
 
 h2 {
@@ -77,13 +78,13 @@ h3:hover {
 
 /* Página de Linha do Tempo */
 body.timeline-page {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   color: #000000;
 }
 
 body.timeline-page header {
-  background-color: #690610; 
-  color: #ffffff; 
+  background-color: #690610;
+  color: #ffffff;
   padding: 20px 0;
   text-align: center;
 }
@@ -105,10 +106,10 @@ body.timeline-page ul {
 }
 
 body.timeline-page li {
-  background-color: #f8d7da; 
+  background-color: #f8d7da;
   margin: 10px 0;
   padding: 15px;
-  border-left: 5px solid #820814; 
+  border-left: 5px solid #820814;
   border-radius: 5px;
 }
 
@@ -166,18 +167,37 @@ footer p {
 }
 
 .text-center {
-  color:#000000;
+  color: #000000;
 }
 
+/* Carrossel */
 .carousel {
   max-width: 600px; /* Define a largura máxima do carrossel */
   margin: 0 auto; /* Centraliza o carrossel */
 }
 
 .carousel img {
-  height: auto;
-  max-height: 400px; /* Limita a altura máxima das imagens */
-  object-fit: cover; /* Ajusta a imagem para preencher sem distorcer */
+  width: 100%; /* Ajusta a largura da imagem ao tamanho do carrossel */
+  max-height: 400px; /* Define a altura máxima para evitar distorções */
+  object-fit: cover; /* Ajusta a proporção das imagens */
+  border-radius: 10px; /* Adiciona cantos arredondados */
 }
 
+/* Botão Voltar */
+#backButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #dc3545; /* Vermelho */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
+#backButton:hover {
+  background-color: #bb2d3b; /* Vermelho mais escuro ao passar o mouse */
+}
