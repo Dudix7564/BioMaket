@@ -16,17 +16,28 @@
     <section>
       <h2 class="text-center">Linha do Tempo da Construção da Maquete</h2>
 
-      <!-- Carrossel -->
-<div class="carousel-container">
-  <div class="carousel-slide">
-    <img src="/BioMaket/FOTOS/historico.jpg" alt="Imagem 1" class="carousel-item">
-    <img src="/BioMaket/FOTOS/pintura.jpeg" alt="Imagem 2" class="carousel-item">
-    <img src="/BioMaket/FOTOS/massinha.jpeg" alt="Imagem 3" class="carousel-item">
-  </div>
-  <button id="prevBtn" class="btn btn-danger">Anterior</button>
-  <button id="nextBtn" class="btn btn-danger">Próximo</button>
-</div>
-
+      <!-- Carrossel com Bootstrap -->
+      <div id="carouselExample" class="carousel slide mt-4" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/BioMaket/FOTOS/historico.jpg" class="d-block w-100" alt="Imagem 1">
+          </div>
+          <div class="carousel-item">
+            <img src="/BioMaket/FOTOS/pintura.jpeg" class="d-block w-100" alt="Imagem 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/BioMaket/FOTOS/massinha.jpeg" class="d-block w-100" alt="Imagem 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
 
       <ul class="timeline mt-4">
         <li><strong>Sorteio do Tema:</strong> Em sala de aula, um sorteio mediado a partir do professor de Biologia definiu o tema referente ao do presente projeto da disciplina - Hemácias e suas funções.</li>
@@ -49,8 +60,21 @@
     </section>
   </main>
 
+  <!-- Botão para voltar à página principal -->
+  <button class="btn btn-danger position-fixed" id="backButton" style="bottom: 20px; right: 20px;">Voltar</button>
+
   <footer class="text-center mt-4">
     <p>&copy; 2024 - BioMaquete </p>
   </footer>
+
+  <!-- Script do Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script personalizado -->
+  <script>
+    // Botão para voltar à página principal
+    document.getElementById('backButton').addEventListener('click', () => {
+      window.location.href = 'index.html'; // Substitua 'index.html' pelo caminho da sua página principal
+    });
+  </script>
 </body>
 </html>
