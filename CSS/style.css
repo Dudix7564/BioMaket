@@ -201,3 +201,9 @@ footer p {
 #backButton:hover {
   background-color: #bb2d3b; /* Vermelho mais escuro ao passar o mouse */
 }
+
+.videos {
+    width: 100%;
+    height: auto;
+  
+}
